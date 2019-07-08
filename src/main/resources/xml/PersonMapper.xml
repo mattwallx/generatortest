@@ -117,6 +117,9 @@
     from people
     where ID = #{ID,jdbcType=NUMERIC}
   </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select * from people
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     <!--
       WARNING - @mbg.generated

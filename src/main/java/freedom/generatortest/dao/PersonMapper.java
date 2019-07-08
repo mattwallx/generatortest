@@ -96,4 +96,6 @@ public interface PersonMapper {
      * @mbg.generated Fri Jul 05 16:09:13 PDT 2019
      */
     int updateByPrimaryKey(Person record);
+
+    List<Person> selectAll();
 }
